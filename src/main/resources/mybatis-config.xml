@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!-- 别名 这样 parameterType 就可以使用 "Books" 了 -->
+    <typeAliases>
+        <package name="com.zlt.pojo"/>
+    </typeAliases>
+
+    <!-- 注册 每一个 mapper.xml 文件都要在这里注册 -->
+    <mappers>
+        <mapper class="com.zlt.dao.BookMapper"/>
+    </mappers>
+
+</configuration>
