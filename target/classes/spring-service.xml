@@ -16,6 +16,10 @@
         <property name="bookMapper" ref="bookMapper"/>
     </bean>
 
+    <bean id="UserServiceImpl" class="com.zlt.service.UserServiceImpl">
+        <property name="userMapper" ref="userMapper"/>
+    </bean>
+
     <!-- 3.配置事务管理器 -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <!-- 注入数据库连接池 -->

@@ -29,4 +29,12 @@
     <!-- 4.扫描web相关的bean -->
     <context:component-scan base-package="com.zlt.controller" />
 
+    <!--关于登录拦截器的配置-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean id="loginInterceptor" class="com.zlt.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>

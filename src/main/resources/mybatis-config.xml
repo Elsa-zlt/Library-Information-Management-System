@@ -12,6 +12,7 @@
     <!-- 注册 每一个 mapper.xml 文件都要在这里注册 -->
     <mappers>
         <mapper class="com.zlt.dao.BookMapper"/>
+        <mapper resource="com/zlt/dao/UserMapper.xml"/>
     </mappers>
 
 </configuration>
